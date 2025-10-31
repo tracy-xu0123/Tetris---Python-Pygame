@@ -22,7 +22,7 @@ def show_start_screen(screen, font, high_score):
         info2 = small_font.render("Press ESC to Quit", True, (255, 0, 0))
         highscore_text = small_font.render(f"High Score: {high_score}", True, (255, 255, 255))
 
-        # 居中显示
+        # Centered display
         screen.blit(title, (80, 180))
         screen.blit(subtitle, (60, 230))
         screen.blit(highscore_text, (60, 280))
@@ -37,9 +37,9 @@ def show_start_screen(screen, font, high_score):
                 pygame.quit()
                 sys.exit()
             elif event.type == pygame.KEYDOWN:
-                if event.key == pygame.K_RETURN:  # Enter 启动游戏
+                if event.key == pygame.K_RETURN:  # Enter Start the game
                     return
-                elif event.key == pygame.K_ESCAPE:  # Esc 退出
+                elif event.key == pygame.K_ESCAPE:  # Esc Quiz the game
                     pygame.quit()
                     sys.exit()
 
@@ -74,10 +74,10 @@ def main():
                     game.move(0, 1)
                 elif event.key == pygame.K_UP:
                     game.rotate()
-                elif event.key == pygame.K_p:  # 新增暂停功能
+                elif event.key == pygame.K_p:  # Added pause function
                     paused = not paused
 
-                elif event.key == pygame.K_r:  # 新增重启功能
+                elif event.key == pygame.K_r:  # Added restart function
                     game = Game()
                     paused = False
 
