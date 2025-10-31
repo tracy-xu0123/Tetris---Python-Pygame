@@ -60,7 +60,7 @@ class Game:
                     new_level = self.lines_cleared // 10 + 1
                     if new_level > old_level:
                         self.level = new_level
-                        self.drop_speed = max(150, 500 - (self.level - 1) * 50)  # 最快不低于150ms
+                        self.drop_speed = max(150, 500 - (self.level - 1) * 50)  # The fastest time is no less than 150 milliseconds.
 
                     # Update the highest score
                     if self.score > self.high_score:
