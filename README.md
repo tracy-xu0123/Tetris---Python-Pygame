@@ -28,7 +28,7 @@ The game includes:
 ## 🚀 How to Run
 1. Clone this repository:  
    ```bash
-   git clone https://github.com/your-username/tetris-reimagined.git
+   git clone https://github.com/tracy-xu0123/Tetris---Python-Pygame.git
 2. Install dependencies:
 pip install pygame
 3. Run the game:
